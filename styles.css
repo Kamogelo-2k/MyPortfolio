@@ -1,0 +1,324 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #181a20;
+    color: #f4f4f4;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.2rem; }
+a {
+    color: #4f8cff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #ffb347;
+}
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.btn.primary {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+}
+.btn.secondary {
+    background: #23272f;
+    color: #fff;
+    border: 1px solid #4f8cff;
+}
+.btn.download {
+    background: #ffb347;
+    color: #23272f;
+    border: none;
+}
+.btn.primary:hover, .btn.secondary:hover, .btn.download:hover {
+    background: #ffb347;
+    color: #23272f;
+}
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    animation: fadeIn 1s;
+}
+.hero-content {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    animation: fadeInUp 1.2s;
+}
+.tagline {
+    font-size: 1.2rem;
+    color: #ffb347;
+    margin-bottom: 1.5rem;
+}
+.cta-buttons {
+    margin-top: 1rem;
+}
+#about {
+    background: #23272f;
+    border-radius: 12px;
+    margin: 2rem 0;
+    animation: fadeIn 1.2s;
+}
+.core-skills {
+    list-style: none;
+    margin: 1rem 0;
+}
+.core-skills li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+#skills {
+    margin: 2rem 0;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+.skill-category {
+    background: #23272f;
+    border-radius: 10px;
+    padding: 1rem;
+    animation: fadeIn 1.2s;
+}
+.skill-bar {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+.skill-bar span {
+    width: 90px;
+    font-size: 0.95rem;
+}
+.bar {
+    flex: 1;
+    height: 8px;
+    background: #353a45;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    overflow: hidden;
+}
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4f8cff 60%, #ffb347 100%);
+    border-radius: 4px;
+    transition: width 1s;
+}
+#projects {
+    margin: 2rem 0;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.project-card {
+    background: #23272f;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    animation: fadeInUp 1.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+.project-links a {
+    margin-right: 1rem;
+    font-size: 0.95rem;
+}
+.tech-stack {
+    color: #4f8cff;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+#experience {
+    margin: 2rem 0;
+}
+.timeline {
+    border-left: 2px solid #4f8cff;
+    padding-left: 2rem;
+}
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+    animation: fadeIn 1.2s;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.2rem;
+    top: 0.5rem;
+    width: 14px;
+    height: 14px;
+    background: #ffb347;
+    border-radius: 50%;
+    border: 2px solid #4f8cff;
+}
+.date {
+    font-size: 0.95rem;
+    color: #4f8cff;
+    margin-bottom: 0.25rem;
+}
+#blog {
+    margin: 2rem 0;
+}
+.blog-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+.blog-post {
+    background: #23272f;
+    border-radius: 10px;
+    padding: 1rem;
+    animation: fadeIn 1.2s;
+}
+.blog-post a {
+    color: #ffb347;
+    font-weight: 600;
+}
+#contact {
+    margin: 2rem 0;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.contact-form input, .contact-form textarea {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: none;
+    background: #353a45;
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+}
+.contact-form button {
+    align-self: flex-start;
+}
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.social-links a {
+    color: #4f8cff;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: #ffb347;
+}
+footer {
+    background: #23272f;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    border-top: 1px solid #353a45;
+    margin-top: 2rem;
+}
+.footer-nav {
+    margin-bottom: 1rem;
+}
+.footer-nav a {
+    margin: 0 1rem;
+    color: #4f8cff;
+    font-size: 1rem;
+}
+.footer-nav a:hover {
+    color: #ffb347;
+}
+small {
+    color: #ffb347;
+    font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        padding: 1rem;
+    }
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.3rem; }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .footer-nav a {
+        margin: 0 0.5rem;
+    }
+}
+
+/* Light Theme (optional) */
+body.light-theme {
+    background: #f4f4f4;
+    color: #23272f;
+}
+body.light-theme #about,
+body.light-theme .skill-category,
+body.light-theme .project-card,
+body.light-theme .blog-post,
+body.light-theme footer {
+    background: #fff;
+    color: #23272f;
+}
+body.light-theme .bar {
+    background: #e0e0e0;
+}
+body.light-theme .fill {
+    background: linear-gradient(90deg, #4f8cff 60%, #ffb347 100%);
+}

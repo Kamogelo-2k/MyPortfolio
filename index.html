@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Developer Portfolio - Kamogelo">
+    <title>Kamogelo | Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- SEO tags -->
+    <meta name="keywords" content="Full Stack Developer, Portfolio, Web Development, Kamogelo">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="container hero-content">
+            <div class="profile-wrapper" style="display:flex; flex-direction:column; align-items:center; margin-bottom:2rem;">
+                <img src="pp.jpg" alt="Kamogelo Avatar" class="avatar" style="width:180px; height:180px; border-radius:50%; object-fit:cover; box-shadow:0 4px 16px rgba(0,0,0,0.15);">
+                <!-- Profile insert space -->
+                <div id="profile-insert" style="margin-top:1rem;">
+                    <!-- You can insert profile info, badges, or social icons here -->
+                </div>
+            </div>
+            <h1>
+                Kamogelo - <span id="profession-title">Full Stack Developer</span>
+            </h1>
+            <p class="tagline">Building scalable, secure, and user-friendly web solutions.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Hire Me</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div id="about-short">
+                <p>
+                    Hi, I’m Kamogelo Mokgata, a dedicated Full Stack Developer and aspiring Internal Auditor with a unique blend of technical and business expertise.<br>
+                    I hold certifications from Oracle and FNB App Academy, alongside ongoing studies toward a Bachelor of Accounting in Internal Auditing.<br>
+                    My mission is simple: to create solutions that are innovative, impactful, and trustworthy.
+                </p>
+                <a href="#" id="learn-more-btn" onclick="showFullAbout(event)">Learn more</a>
+            </div>
+            <div id="about-full" style="display:none;">
+                <p>
+                    Hi, I’m Kamogelo Mokgata, a dedicated Full Stack Developer and aspiring Internal Auditor with a unique blend of technical and business expertise. I hold certifications from Oracle (AI Foundation Associate & Data Platform Associate, 2025) and the FNB App Academy (Full Stack Development, 2025), alongside ongoing studies toward a Bachelor of Accounting in Internal Auditing.
+                </p>
+                <p>
+                    This combination allows me to approach technology with both a developer’s mindset and an auditor’s precision — building applications that are not only functional and user-friendly but also secure, reliable, and business-aligned.
+                </p>
+                <p>
+                    My technical skills span frontend and backend development, UX principles, APIs, data management, and AI integration, while my accounting background strengthens my ability to handle business processes, risk management, and data-driven decision-making.
+                </p>
+                <p>
+                    Beyond coding, I have a strong interest in business development, app marketing, and startup growth, enabling me to bridge the gap between technology, compliance, and business strategy. My mission is simple: to create solutions that are innovative, impactful, and trustworthy.
+                </p>
+                <a href="#" id="show-less-btn" onclick="showShortAbout(event)">Show less</a>
+            </div>
+            <a href="Kamogelo CV.pdf" class="btn download" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+                <div class="skill-category" style="flex:1; min-width:250px; background:#23272f; border-radius:12px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+                    <h3>Frontend</h3>
+                    <div class="skill-bar"><span>HTML/CSS/JS</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+                    <div class="skill-bar"><span>UX Design Principles</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+                    <div class="skill-bar"><span>User-Centric App Development</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+                    <div class="skill-bar"><span>Design Thinking</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                </div>
+                <div class="skill-category" style="flex:1; min-width:250px; background:#23272f; border-radius:12px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+                    <h3>Backend</h3>
+                    <div class="skill-bar"><span>Backend Development (Intro)</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                    <div class="skill-bar"><span>API Development & Integration</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                    <div class="skill-bar"><span>AI in Backend Development</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                </div>
+                <div class="skill-category" style="flex:1; min-width:250px; background:#23272f; border-radius:12px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+                    <h3>Data & AI</h3>
+                    <div class="skill-bar"><span>Data Management & Analysis</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+                    <div class="skill-bar"><span>AI & Automation</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+                    <div class="skill-bar"><span>Oracle AI & Data Platform</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+                </div>
+                <div class="skill-category" style="flex:1; min-width:250px; background:#23272f; border-radius:12px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+                    <h3>Collaboration & Tools</h3>
+                    <div class="skill-bar"><span>GitHub & Version Control</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+                    <div class="skill-bar"><span>App Development Strategies</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+                    <div class="skill-bar"><span>SDLC (Software Development Lifecycle)</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+                </div>
+                <div class="skill-category" style="flex:1; min-width:250px; background:#23272f; border-radius:12px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+                    <h3>Business & Strategy</h3>
+                    <div class="skill-bar"><span>Business Development</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                    <div class="skill-bar"><span>Marketing for Apps</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                    <div class="skill-bar"><span>Business Funding Basics</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Portfolio -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>YouthConnect SA</h3>
+                    <p class="tech-stack">HTML, CSS, JavaScript, GitHub</p>
+                    <p class="description">
+                        1.Designed and developed a fully functional website for YouthConnect SA, a platform aimed at connecting students with opportunities such as bursaries, universities, and colleges.<br>
+                        2.Implemented a responsive and user-friendly interface, making it accessible on both desktop and mobile.<br>
+                        3.Integrated Google AdSense and ads.txt configuration to enable monetization.<br>
+                        4.Used GitHub for version control and deployment.<br>
+                        5.Applied frontend and backend development skills (HTML, CSS, JS, hosting strategies) to deliver a professional, fast-loading site.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.youthconnectsa.co.za" target="_blank">🌐 Live</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience & Education</h2>
+            <div class="timeline" style="border-left:none; padding-left:0;">
+                <div class="timeline-item" style="position:relative;">
+                    <span class="date">2025</span>
+                    <h3>Oracle AI Foundation Associate</h3>
+                    <p>
+                        Gained expertise in designing and implementing AI-driven applications.<br>
+                        Practical experience with machine learning models, APIs, and automation workflows.<br>
+                        Knowledge of ethical AI practices and real-world applications.
+                    </p>
+                </div>
+                <div class="timeline-item" style="position:relative;">
+                    <span class="date">2025</span>
+                    <h3>Oracle Data Platform Associate</h3>
+                    <p>
+                        Skilled in managing relational and non-relational databases on the cloud.<br>
+                        Hands-on experience with SQL, data integration, and analytics.<br>
+                        Built and optimized data pipelines for scalable business use cases.
+                    </p>
+                </div>
+                <div class="timeline-item" style="position:relative;">
+                    <span class="date">2025</span>
+                    <h3>FNB App Academy – Full Stack Development Certificate</h3>
+                    <p>
+                        Trained in modern full stack development (frontend, backend, and deployment).<br>
+                        Gained practical experience with JavaScript, React, Node.js, REST APIs, and databases.<br>
+                        Built and deployed real-world apps during the program, following agile methodologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="social-links">
+                <a href="mailto:kamogelomokgata@gmail.com">✉️ Email</a>
+                <a href="https://wa.me/2765466792" target="_blank">💬 WhatsApp</a>
+                <a href="https://www.linkedin.com/in/kamogelo-mokgata-782787214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">💼 LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p>&copy; 2024 Kamogelo. All rights reserved.</p>
+            <small>Designed & built by Kamogelo</small>
+        </div>
+    </footer>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // About Me toggle
+        function showFullAbout(e) {
+            e.preventDefault();
+            document.getElementById('about-short').style.display = 'none';
+            document.getElementById('about-full').style.display = 'block';
+        }
+        function showShortAbout(e) {
+            e.preventDefault();
+            document.getElementById('about-full').style.display = 'none';
+            document.getElementById('about-short').style.display = 'block';
+        }
+
+        // Profession title rotation
+        const titles = [
+            "Full Stack Developer",
+            "AI & Data Enthusiast",
+            "Future Internal Auditor"
+        ];
+        let titleIndex = 0;
+        setInterval(() => {
+            titleIndex = (titleIndex + 1) % titles.length;
+            document.getElementById('profession-title').textContent = titles[titleIndex];
+        }, 2000);
+    </script>
+    <style>
+@media (min-width: 900px) {
+    .timeline-item::before {
+        display: none !important;
+    }
+}
+</style>
+</body>
+</html>
+</html>
